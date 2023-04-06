@@ -14,10 +14,25 @@
     href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
     rel="stylesheet">
     <title>Hello, world!</title>
+
+    <!-- CSS -->
+    <style>
+        .box {
+            width: 150px;
+            height: 150px;
+            border-radius: 70%;
+            overflow: hidden;
+        }
+        .profile {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="position: fixed; width: 100%;">
         <div class="container-fluid" style="justify-content: space-between; flex-wrap: nowrap; min-width: 1000px;">
             <a class="navbar-brand" href="#"><img style="width: 100px;"
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/800px-Instagram_logo.svg.png"></a>
@@ -41,6 +56,56 @@
             </div>
         </div>
     </nav>
+
+    <div style="display: flex; flex-direction: row; text-align: center; justify-content: center; padding-top: 60px; background-color: #fafafa;">
+        <div style="width: 500px; min-width: 500px; height: 1000px; margin-right: 300px;">
+            <!-- 왼쪽 -->
+            <div style="border: solid 1px gray; background-color: white;">
+                <div style="display: flex; flex-direction: row; align-items: center;">
+                    <!-- 프로필박스 -->
+                    <div class="box" style="width: 60px; height: 60px;">
+                        <img class="profile" src="http://ilovecharacter.com/wordpress/wp-content/uploads/2021/04/115-130%EC%88%98%EC%A0%952-83-e1618819879217.jpg"/>
+                    </div>
+                    <!-- 작성자 -->
+                    <div>
+                        modory.93
+                    </div>
+                </div>
+                <div>
+                    <!-- 이미지 -->
+                    <img style="width: 100%;" src="https://a.cdn-hotels.com/gdcs/production76/d1135/21203dce-feeb-40f3-8c93-fc1a98f7549a.jpg?impolicy=fcrop&w=800&h=533&q=medium">
+                </div>
+                <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                    <!-- 아이콘 집합 -->
+                    <div>
+                        <span class="material-icons-outlined">
+                            favorite_border
+                        </span>
+                        <span class="material-icons-outlined">
+                            mode_comment
+                        </span>
+                        <span class="material-icons-outlined">
+                            send
+                        </span>
+                    </div>
+                    <div>
+                        <span class="material-icons-outlined">
+                            bookmark_border
+                        </span>
+                    </div>
+                </div>
+                <div style="text-align: left; font-size: 14px;">
+                    <!-- 좋아요 -->
+                    춘식이 <b>외 19명</b>이 좋아합니다
+                </div>
+                <div> 댓글들 </div>
+                <div> 댓글 입력창 </div>
+            </div>
+        </div>
+        <div style="width: 400px; height: 1000px; background: orange; position: fixed; left: 62%">
+            오른쪽
+        </div>
+    </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
