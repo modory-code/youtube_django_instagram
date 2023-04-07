@@ -28,6 +28,15 @@
             height: 100%;
             object-fit: cover;
         }
+        input:focus {
+            outline: none;
+            border: none;
+        }
+        .feed_box {
+            margin: 20px 0;
+            border: solid 1px gray;
+            background-color: white;
+        }
     </style>
 </head>
 
@@ -59,11 +68,11 @@
 
     <div style="display: flex; flex-direction: row; text-align: center; justify-content: center; padding-top: 60px; background-color: #fafafa;">
         <div style="width: 500px; min-width: 500px; height: 1000px; margin-right: 300px;">
-            <!-- 왼쪽 -->
-            <div style="border: solid 1px gray; background-color: white;">
-                <div style="display: flex; flex-direction: row; align-items: center;">
+            <!-- 왼쪽 피드 -->
+            <div class="feed_box">
+                <div style="margin: 20px; display: flex; flex-direction: row; align-items: center;">
                     <!-- 프로필박스 -->
-                    <div class="box" style="width: 60px; height: 60px;">
+                    <div class="box" style="width: 35px; height: 35px;">
                         <img class="profile" src="http://ilovecharacter.com/wordpress/wp-content/uploads/2021/04/115-130%EC%88%98%EC%A0%952-83-e1618819879217.jpg"/>
                     </div>
                     <!-- 작성자 -->
@@ -75,7 +84,7 @@
                     <!-- 이미지 -->
                     <img style="width: 100%;" src="https://a.cdn-hotels.com/gdcs/production76/d1135/21203dce-feeb-40f3-8c93-fc1a98f7549a.jpg?impolicy=fcrop&w=800&h=533&q=medium">
                 </div>
-                <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                <div style="margin: 0 20px; display: flex; flex-direction: row; justify-content: space-between;">
                     <!-- 아이콘 집합 -->
                     <div>
                         <span class="material-icons-outlined">
@@ -94,12 +103,25 @@
                         </span>
                     </div>
                 </div>
-                <div style="text-align: left; font-size: 14px;">
+                <div style="margin: 0 20px; text-align: left; font-size: 14px;">
                     <!-- 좋아요 -->
                     춘식이 <b>외 19명</b>이 좋아합니다
                 </div>
-                <div> 댓글들 </div>
-                <div> 댓글 입력창 </div>
+                <div style="margin: 0 20px; text-align: left; font-size: 16px;">
+                    <!-- 내용 -->
+                    <b>modory.93</b> 10년 전부터 체코의 도시 프라하가 너무 가고 싶다
+                </div>
+                <!-- 댓글들 -->
+                <div style="margin: 0 20px; text-align: left; font-size: 14px;">
+                    <b>siryu_</b> 나도 프라하 가고 싶다
+                </div>
+                <div style="margin: 0 20px; text-align: left; font-size: 14px;">
+                    <b>jswoo900615</b> 우리 언제 갈까요~? 😍
+                </div>
+                <div style="border-top: solid 1px gray;">
+                    <!-- 댓글 입력창 -->
+                    <input type="text" class="form-control" placeholder="댓글 달기..." style="box-shadow: none; border: none; outline: none;">
+                </div>
             </div>
         </div>
         <div style="width: 400px; height: 1000px; background: orange; position: fixed; left: 62%">
